@@ -40,7 +40,7 @@ def build_prompt(messages):
 @router.get("/models")
 async def get_models():
     result = []
-    for _, model_cfg in MODELS.items():
+    for _, model_cfg in config.MODELS.items():
         result.append({"id": model_cfg[0], "object": "model"})
     return {"data": result}
 
