@@ -32,3 +32,8 @@ FastAPI HTTP API Service witn minimal OpenAI API compatable services (for exampl
 	or
 	python main.py
    	```
+
+### TODO:
+ - unload models after N-time
+ - working with many workers with shared pipeline in memory
+ - modes: single model mode

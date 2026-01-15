@@ -16,11 +16,5 @@ def create_app():
         allow_methods=["*"],
         allow_headers=["*"],
     )
-
     app.include_router(router)
-    app.state.model_path = os.getenv("MODEL_PATH", "llm")
-    app.state.available_models = [
-        "gemma-3-4b-it-int4-cw-ov"
-    ]  # TODO: get models from dir llm
-
     return app
