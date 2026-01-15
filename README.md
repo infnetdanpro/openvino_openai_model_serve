@@ -25,7 +25,7 @@ FastAPI HTTP API Service witn minimal OpenAI API compatable services (for exampl
 	```sheel
 	hf download OpenVINO/gemma-3-4b-it-int4-cw-ov --local-dir models/gemma-3-4b-it-int4-cw-ov
 	```
- - Configure what models do you have and what OpenVino Pipeline need for model (see server/ve)
+ - Configure what models do you have and what OpenVino Pipeline need for model (see config.py MODELS variable)
  - Run project to serve models
  	```shell
 	uvicorn main:app --host=0.0.0.0 --port=11435
